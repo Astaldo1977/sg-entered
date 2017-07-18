@@ -20,15 +20,15 @@ var fetchGiveaway = function(code, element) {
         "method": "GET",
         "url": "https://www.steamgifts.com/giveaway/"+code+"/",
         "onload": function(response) {
-            if($(".featured__column--invite-only", response.responseText).length === 1) {
-                $(element).parent().next().after('<DIV class="featured__column featured__column--invite-only"><i class="fa fa-fw fa-lock"></i></DIV>');
+            if($(".featured__column--group", response.responseText).length === 1) {
+                $(element).parent().next().after('<DIV class="featured__column featured__column--group"><i class="fa fa-fw fa-user"></i></DIV>');
             }
             if($(".featured__column--contributor-level", response.responseText).length === 1) {
                 var level = $(".featured__column--contributor-level", response.responseText).text();
                 $(element).parent().next().after('<DIV class="featured__column featured__column--contributor-level featured__column--contributor-level--positive">'+level+'</DIV>');
             }
-            if($(".featured__column--group", response.responseText).length === 1) {
-                $(element).parent().next().after('<DIV class="featured__column featured__column--group"><i class="fa fa-fw fa-user"></i></DIV>');
+            if($(".featured__column--invite-only", response.responseText).length === 1) {
+                $(element).parent().next().after('<DIV class="featured__column featured__column--invite-only"><i class="fa fa-fw fa-lock"></i></DIV>');
             }
         },
         "onabort": errorFunction,
