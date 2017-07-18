@@ -9,8 +9,8 @@
 // @grant        GM_getValue
 // @grant        GM_xmlhttpRequest
 // @connect      self
-// @updateURL    https://raw.githubusercontent.com/Astaldo1977/sg-entered/07b7117e548472aca1baad1995813b50131c4408/SteamGifts%20Entered%20Giveaways.js
-// @downloadURL  https://raw.githubusercontent.com/Astaldo1977/sg-entered/07b7117e548472aca1baad1995813b50131c4408/SteamGifts%20Entered%20Giveaways.js
+// @updateURL    https://raw.githubusercontent.com/Astaldo1977/sg-entered/master/SteamGifts%20Entered%20Giveaways.user.js
+// @downloadURL  https://raw.githubusercontent.com/Astaldo1977/sg-entered/master/SteamGifts%20Entered%20Giveaways.user.js
 // ==/UserScript==
 var errorFunction = function(response) {
     console.log("Error details: ", response.status, response.responseText);
