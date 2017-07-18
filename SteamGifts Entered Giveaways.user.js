@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         SteamGifts Entered Giveaways
 // @namespace    https://www.steamgifts.com/user/astaldo
-// @version      0.0.3
+// @version      0.0.4
 // @description  Display types of entered SteamGift Giveaways
 // @author       astaldo
-// @match        https://www.steamgifts.com/giveaways/entered
+// @match        https://www.steamgifts.com/giveaways/entered*
 // @grant        GM_log
 // @grant        GM_getValue
 // @grant        GM_xmlhttpRequest
